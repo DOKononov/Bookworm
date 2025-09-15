@@ -6,3 +6,37 @@
 //
 
 import Foundation
+import SwiftData
+
+@Model
+final class Book {
+    var author: String
+    var title: String
+    var genre: String
+    var review: String
+    var rating: Int
+    
+    init(
+        author: String,
+        title: String,
+        genre: String,
+        review: String,
+        rating: Int
+    ) {
+        self.author = author
+        self.title = title
+        self.genre = genre
+        self.review = review
+        self.rating = rating
+    }
+}
+
+enum Genre: String, CaseIterable {
+    case fantasy
+    case horror
+    case kids
+    case mistary
+    case poetry
+    case romance
+    case thriiller
+}

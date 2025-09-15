@@ -8,8 +8,48 @@
 import SwiftUI
 
 struct AddBookView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
+    
+    @State private var title: String = ""
+    @State private var author: String = ""
+    @State private var genre: Genre = .fantasy
+    @State private var review: String = ""
+    @State private var rating: Int = 3
+
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name of book", text: $title)
+                    TextField("Author name", text: $author)
+                    Picker("Genre", selection: $genre) {
+                        ForEach(Genre.allCases, id: \.self) {
+                            Text($0.rawValue.capitalized)
+                        }
+                    }
+                }
+                
+                Section("Write a review") {
+                    TextEditor(text: $review)
+                    Picker("Rating", selection: $rating) {
+                        ForEach(0..<6) {
+                            Text(String($0))
+                        }
+                    }
+                }
+                
+                Section {
+                    Button("Save") {
+                        let newBook = Book(author: author, title: title, genre: genre.rawValue, review: review, rating: rating)
+                        modelContext.insert(newBook)
+                        dismiss()
+                    }
+                }
+            }
+            .navigationTitle("Add book")
+        }
     }
 }
 
