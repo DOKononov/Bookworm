@@ -15,6 +15,7 @@
 		567B78932E785F8E004A884E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567B788E2E785F8E004A884E /* ContentView.swift */; };
 		567B78942E785F8E004A884E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567B78882E785F8E004A884E /* Preview Assets.xcassets */; };
 		567B78952E785F8E004A884E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567B788B2E785F8E004A884E /* Assets.xcassets */; };
+		56B13C032E795265003A98DD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B13C022E795265003A98DD /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		567B788C2E785F8E004A884E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		567B788D2E785F8E004A884E /* BookwormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormApp.swift; sourceTree = "<group>"; };
 		567B788E2E785F8E004A884E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		56B13C022E795265003A98DD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		56F7A0CE2E77E81E002F3490 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 				567B788E2E785F8E004A884E /* ContentView.swift */,
 				566EF6D82E793F66008D7A47 /* RatingView.swift */,
 				566EF6DA2E79455D008D7A47 /* EmojyRatingView.swift */,
+				56B13C022E795265003A98DD /* DetailView.swift */,
 				567B788A2E785F8E004A884E /* AddBookView.swift */,
 			);
 			path = Bookworm;
@@ -155,6 +158,7 @@
 				566EF6DB2E79455D008D7A47 /* EmojyRatingView.swift in Sources */,
 				567B78902E785F8E004A884E /* AddBookView.swift in Sources */,
 				567B78912E785F8E004A884E /* Book.swift in Sources */,
+				56B13C032E795265003A98DD /* DetailView.swift in Sources */,
 				567B78922E785F8E004A884E /* BookwormApp.swift in Sources */,
 				566EF6D92E793F66008D7A47 /* RatingView.swift in Sources */,
 				567B78932E785F8E004A884E /* ContentView.swift in Sources */,
