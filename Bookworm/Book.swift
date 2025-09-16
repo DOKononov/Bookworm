@@ -32,11 +32,11 @@ final class Book {
 }
 
 enum Genre: String, CaseIterable {
-    case fantasy
-    case horror
-    case kids
-    case mistary
-    case poetry
-    case romance
-    case thriiller
+    case fantasy = "Fantasy"
+    case horror = "Horror"
+    case kids = "Kids"
+    case mistary = "Mistary"
+    case poetry = "Poetry"
+    case romance = "Romance"
+    case thriiller = "Thriiller"
 }

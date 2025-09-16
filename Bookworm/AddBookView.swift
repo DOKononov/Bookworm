@@ -26,7 +26,7 @@ struct AddBookView: View {
                     TextField("Author name", text: $author)
                     Picker("Genre", selection: $genre) {
                         ForEach(Genre.allCases, id: \.self) {
-                            Text($0.rawValue.capitalized)
+                            Text($0.rawValue)
                         }
                     }
                 }
@@ -38,7 +38,7 @@ struct AddBookView: View {
                 
                 Section {
                     Button("Save") {
-                        let newBook = Book(author: author, title: title, genre: genre.rawValue.capitalized, review: review, rating: rating)
+                        let newBook = Book(author: author, title: title, genre: genre.rawValue, review: review, rating: rating)
                         modelContext.insert(newBook)
                         dismiss()
                     }
