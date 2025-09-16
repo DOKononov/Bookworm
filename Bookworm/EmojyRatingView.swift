@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct EmojyRatingView: View {
+    let rating: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        switch rating {
+        case 1: Text("🫣")
+        case 2: Text("🫩")
+        case 3: Text("😐")
+        case 4: Text("🙂")
+        case 5: Text("😃")
+        default: Text("🫥")
+        }
     }
 }
 
 #Preview {
-    EmojyRatingView()
+    EmojyRatingView(rating: 3)
 }
